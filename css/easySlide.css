@@ -1,0 +1,6 @@
+*{margin:0;padding: 0;}
+html,body{height:100%;overflow: hidden;}
+.slideContainer{height:100%;transform:translate3d(0,2px,0)}
+.slideContainer .section{height: 100%;font-size:0px;}
+.slideContainer .pageContainer{width:100%;}
+.slideContainer .page{display: inline-block;height: 100%;font-size:16px;}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title></title>
+    <link rel="stylesheet" href="css/easySlide.css"/>
+</head>
+<style>
+    .section:nth-child(1){background-color:red;}
+    .section:nth-child(2) .page:nth-child(1){background-color:green;}
+    .section:nth-child(2) .page:nth-child(2){background-color:red;}
+    .section:nth-child(2) .page:nth-child(3){background-color:black;}
+    .section:nth-child(3){background-color:blue;}
+    .section:nth-child(4){background-color:gray;}
+</style>
+<body>
+<div class="slideContainer">
+    <div class="section">
+        <h1 class="page">1,1</h1>
+        <h1 class="page">1,2</h1>
+        <h1 class="page">1,3</h1>
+    </div>
+    <div class="section active">
+        <h1 class="page">2,1</h1>
+        <h1 class="page">2,2</h1>
+        <h1 class="page">2,3</h1>
+    </div>
+    <div class="section">
+        <h1 class="page">3</h1>
+    </div>
+    <div class="section">
+        <h1 class="page">4</h1>
+    </div>
+</div>
+
+</body>
+<script src="js/easySlide.js?dsss"></script>
+<script>
+    var slide = new easySlide(".slideContainer");
+</script>
+</html>
